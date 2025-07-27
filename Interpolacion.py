@@ -98,7 +98,19 @@ def Bilineal(Picture,u):
             
 
 ###############################################
+"""
 
+Variables Globales para la interpolción bicubica
+"""
+
+
+Right_M=np.zeros([4,4])
+Left_M=np.zeros([4,4])
+Right_M[0,0]=1.0 
+Right_M[1,2]=1.0
+Right_M[2]=np.array([-3,3,-2,-1])
+Right_M[3]=np.array([2,-2,1,1])
+Left_M=Right_M.transpose()
 """
 Funciones para quue funcione la interpolación bicubica
 Usando la derivada
