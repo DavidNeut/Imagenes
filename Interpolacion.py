@@ -2,7 +2,7 @@
 """
 Created on Mon Jul 21 12:43:30 2025
 
-@author: Jimi_
+@author: DavidNeut
 """
 import numpy as np
 from numpy import linalg as lg
